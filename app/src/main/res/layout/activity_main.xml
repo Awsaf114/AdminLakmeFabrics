@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.awsafalam.adminlakmefabrics.MainActivity">
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Select_Image"
+        android:text="Select Image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgView"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Select_Image"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/Description"
+        android:hint="Enter Description"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/Price"
+        android:hint="Enter Price"
+        />
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Upload"
+        android:text="Upload Image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
